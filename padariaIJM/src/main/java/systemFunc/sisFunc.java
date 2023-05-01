@@ -65,7 +65,7 @@ public class sisFunc {
                 emailf.setEmail(); 
                 
                 if(matricula !=0) {
-                    matricula = matricula++;
+                    matricula = ++matricula;
                 }
                 else{
                     matricula = 1;
