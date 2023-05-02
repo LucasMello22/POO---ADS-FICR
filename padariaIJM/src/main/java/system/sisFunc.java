@@ -181,7 +181,6 @@ public class sisFunc {
                 funcionario.setStrategy(email);
                 funcionario.cadastrar();
                 emailf.setEmail(); 
-                cargof.codigo(); //Talvez nao use por sempre atribuir 5 a variavel
                 cargof.atribuicaoCargo();
                 
                
@@ -253,6 +252,7 @@ public class sisFunc {
                                   + "\nTelefone: " + telefonef.getTel()
                                   + "\nEmail: " + emailf.getEmail()
                                   + "\nCargo: " + cargof.getCargo());
+                cargof.descriCargos();
                                   
                 if(matricula != 0) {
                     System.out.println("Matricula: " + matricula);
