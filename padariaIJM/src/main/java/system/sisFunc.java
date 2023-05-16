@@ -15,9 +15,6 @@ import stragyFunc.cadastrarTelefone;
 import stragyFunc.cargo;
 import stragyFunc.sisCad;
 import stragyVendas.itensVenda;
-import stragyVendas.sisVendas;
-import stragyVendas.stragyVen;
-import stragyVendas.vendas;
 
 
 
@@ -44,8 +41,6 @@ public class sisFunc {
         cadastrarTelefone telefonef = new cadastrarTelefone();
         cadastrarEmail emailf = new cadastrarEmail();
         cargo cargof = new cargo();
-      //  stragyVen stVendas = new stragyVen();
-     //   sisVendas vendas = new itensVenda();   
         itensVenda itensv = new itensVenda();
         
 
@@ -68,7 +63,7 @@ public class sisFunc {
                                 + "Voce gostaria de:\n"
                                 + "1 - Conferir preco\n"
                                 + "2 - Adicionar um produto\n"
-                                + "3 - Remover um produto\n" //nao terei tempo de implementar ainda
+                                + "3 - Remover um produto\n" 
                                 + "4 - Conferir preço total\n"
                                 + "0 - Sair do sistema");
          choiceVendas = sc.nextInt();
@@ -182,7 +177,7 @@ public class sisFunc {
                 funcionario.cadastrar();
                 emailf.setEmail(); 
                 cargof.atribuicaoCargo();
-                
+               
                
                 
                 
