@@ -18,11 +18,12 @@ import stragyVendas.itensVenda;
 
 
 
+
 /**
  *
  * @author Lucas
  */
-public class sisFunc {
+public class system {
 
      public static void main(String[] args) {
          int choice, alt, choiceFunc;
@@ -42,6 +43,7 @@ public class sisFunc {
         cadastrarEmail emailf = new cadastrarEmail();
         cargo cargof = new cargo();
         itensVenda itensv = new itensVenda();
+
         
 
       do{
