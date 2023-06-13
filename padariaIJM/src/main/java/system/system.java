@@ -5,6 +5,7 @@
 package system;
 
 import java.util.Scanner;
+import stragyEsto.gerenEsto;
 
 import stragyFunc.cadastrarCpf;
 import stragyFunc.cadastrarEmail;
@@ -268,6 +269,37 @@ public class system {
         } while(choiceFunc !=0);
         }
         
+        else if (choice ==3){
+            gerenEsto estoque = new gerenEsto();
+            int choiceEsto;
+            do{
+                System.out.println("Ola! Escolha uma das opcoes: \n"
+                           + "1 - Conferir estoque!\n"
+                           + "2 - Adicionar produto ao estoque!\n"
+                           + "3 - Remover produto do estoque!\n"
+                           + "0 - Sair do sistema\n");
+            choiceEsto = sc.nextInt();
+            
+            switch(choiceEsto) {
+                case 1:
+                    estoque.conferir();
+                    break;
+                case 2:
+                    estoque.adicionar();
+                    break;
+                case 3:
+                    estoque.remover();
+                    break;
+                case 0:
+                    System.out.println("Você saiu do Sistema!");
+                    break;
+                default:
+                System.out.println("Opcao invalida!");
+                break; 
+            }
+            }while(choiceEsto !=0);
+            }
+            
         else {
             System.out.println("Opcao invalida!");
         }
