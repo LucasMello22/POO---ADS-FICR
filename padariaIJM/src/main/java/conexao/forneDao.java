@@ -47,7 +47,7 @@ public class forneDao {
     }
 
     
-    public ArrayList<fornecedores> listarFunc(){
+    public ArrayList<fornecedores> listarForn(){
         String comando = "select * from fornecedor";
         conForne = new conexaoDAO().conectaBD();
         try {
@@ -72,7 +72,7 @@ public class forneDao {
        return lista; 
     }
     
-    
+   
     public void alterarFuncionario(fornecedores objfornecedor){
        String comando = "update fornecedor set cnpj = ?, razao_social = ?, endereco = ?, telefone = ?, email = ? where id_fornecedor = ?";
 

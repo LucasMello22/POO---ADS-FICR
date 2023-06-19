@@ -369,7 +369,7 @@ public class frmFornecedor extends javax.swing.JFrame {
             DefaultTableModel model = (DefaultTableModel) tabFunc.getModel();
             model.setNumRows(0);
             
-           ArrayList<fornecedores> lista = objForne.listarFunc();
+           ArrayList<fornecedores> lista = objForne.listarForn();
            
            for(int i=0; i<lista.size(); i++){
                model.addRow(new Object[]{

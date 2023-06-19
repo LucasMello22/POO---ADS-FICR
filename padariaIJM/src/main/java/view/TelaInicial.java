@@ -37,9 +37,11 @@ public class TelaInicial extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SEJA BEM VINDO AO SISTEMA DE GESTÃO DA PADARIA IJM");
 
         jLabel2.setText("O QUE GOSTARIA DE GERENCIAR?");
+        jLabel2.setAlignmentY(0.0F);
 
         btFuncionarios.setText("FUNCIONARIOS");
         btFuncionarios.addActionListener(new java.awt.event.ActionListener() {
@@ -56,6 +58,11 @@ public class TelaInicial extends javax.swing.JFrame {
         });
 
         jButton3.setText("ESTOQUE");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("CLIENTES");
 
@@ -66,40 +73,41 @@ public class TelaInicial extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(400, 400, 400)
-                            .addComponent(jLabel2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(144, 144, 144)
-                            .addComponent(btFuncionarios)
-                            .addGap(56, 56, 56)
-                            .addComponent(btFornecedores)
-                            .addGap(56, 56, 56)
-                            .addComponent(jButton3)
-                            .addGap(47, 47, 47)
-                            .addComponent(jButton4)
-                            .addGap(63, 63, 63)
-                            .addComponent(jButton5))))
+                .addGap(191, 191, 191)
+                .addComponent(jLabel1)
                 .addContainerGap(166, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(396, 396, 396))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btFuncionarios)
+                .addGap(56, 56, 56)
+                .addComponent(btFornecedores)
+                .addGap(52, 52, 52)
+                .addComponent(jButton3)
+                .addGap(51, 51, 51)
+                .addComponent(jButton4)
+                .addGap(63, 63, 63)
+                .addComponent(jButton5)
+                .addGap(145, 145, 145))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+                .addGap(73, 73, 73)
                 .addComponent(jLabel1)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addGap(71, 71, 71)
+                .addGap(69, 69, 69)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btFuncionarios)
                     .addComponent(btFornecedores)
                     .addComponent(jButton3)
                     .addComponent(jButton4)
                     .addComponent(jButton5))
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addContainerGap(223, Short.MAX_VALUE))
         );
 
         pack();
@@ -113,6 +121,10 @@ public class TelaInicial extends javax.swing.JFrame {
     private void btFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFornecedoresActionPerformed
     new frmFornecedor().setVisible(true);
     }//GEN-LAST:event_btFornecedoresActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+      new frmEstoque().setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
