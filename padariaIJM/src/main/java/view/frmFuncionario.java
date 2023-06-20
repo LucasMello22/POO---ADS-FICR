@@ -4,7 +4,7 @@
  */
 package view;
 
-import conexao.funcDao;
+import conexaoDAO.funcDao;
 import gerenFunc.funcionarios;
 import java.sql.SQLException;
 import java.util.ArrayList;

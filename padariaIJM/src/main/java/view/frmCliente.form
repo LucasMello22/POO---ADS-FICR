@@ -28,18 +28,16 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtNome" pref="258" max="32767" attributes="0"/>
+                          <Component id="txtTelefone" pref="258" max="32767" attributes="0"/>
+                          <Component id="txtEndereco" pref="258" max="32767" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtQtd" pref="258" max="32767" attributes="0"/>
-                          <Component id="txtIdF" pref="258" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="title" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtIdE" min="-2" pref="99" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="txtIngrediente" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCPF" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
+                          <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail" pref="258" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -64,7 +62,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="622" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="btLimpar" min="-2" max="-2" attributes="0"/>
@@ -72,13 +69,9 @@
                               <Component id="btCarregarCampo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="btPesquisar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="47" max="32767" attributes="0"/>
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="cbxForne" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -103,21 +96,26 @@
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="title" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIdE" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                      <Component id="txtIngrediente" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtCPF" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtQtd" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNome" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtIdF" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTelefone" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtEndereco" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtEmail" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btCadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -132,8 +130,6 @@
                       <Component id="btCarregarCampo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btLimpar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btPesquisar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cbxForne" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="48" max="32767" attributes="0"/>
@@ -142,19 +138,14 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="title">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ID"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtIngrediente">
+    <Component class="javax.swing.JTextField" name="txtCPF">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIngredienteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCPFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quantidade"/>
+        <Property name="text" type="java.lang.String" value="Nome"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btCadastrar">
@@ -165,18 +156,18 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCadastrarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtQtd">
+    <Component class="javax.swing.JTextField" name="txtNome">
     </Component>
-    <Component class="javax.swing.JTextField" name="txtIdF">
+    <Component class="javax.swing.JTextField" name="txtTelefone">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Id Fornecedor"/>
+        <Property name="text" type="java.lang.String" value="Telefone"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Gerenciamento do Estoque"/>
+        <Property name="text" type="java.lang.String" value="Gerenciamento dos Clientes"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -189,7 +180,7 @@
         <Component class="javax.swing.JTable" name="tabEsto">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null}&#xa;    },&#xa;    new String [] {&#xa;        &quot;Id_Ingrediente&quot;, &quot;Nome Ingrediente&quot;, &quot;Quantidade&quot;, &quot;Id_Fornecedor&quot;&#xa;    }&#xa;)" type="code"/>
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null},&#xa;        {null, null, null, null, null, null, null}&#xa;    },&#xa;    new String [] {&#xa;        &quot;CPF&quot;, &quot;Nome&quot;, &quot;Telefone&quot;, &quot;Endereco&quot;, &quot;Email&quot;&#xa;    }&#xa;)" type="code"/>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0"/>
@@ -211,16 +202,8 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingrediente"/>
+        <Property name="text" type="java.lang.String" value="CPF"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtIdE">
-      <Properties>
-        <Property name="enabled" type="boolean" value="false"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIdEActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btCarregarCampo">
       <Properties>
@@ -256,27 +239,18 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbxForne">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Selecione"/>
-            <StringItem index="1" value="1"/>
-            <StringItem index="2" value="2"/>
-            <StringItem index="3" value="3"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxForneActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
+    <Component class="javax.swing.JTextField" name="txtEndereco">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Selecione o Fornecedor"/>
+        <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEmail">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email"/>
       </Properties>
     </Component>
   </SubComponents>

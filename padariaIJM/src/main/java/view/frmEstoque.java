@@ -4,10 +4,10 @@
  */
 package view;
 
-import conexao.estoDao;
-import conexao.forneDao;
+import conexaoDAO.estoDao;
+
 import gerenEsto.estoque;
-import gerenForne.fornecedores;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
